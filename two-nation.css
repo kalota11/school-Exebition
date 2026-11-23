@@ -1,0 +1,108 @@
+/* ===== دو قومی نظریہ: روشن "سٹکر" تھیم =====
+   نیوی لکیریں + ٹھوس سائے، نارنجی اور سبز کی جوڑی، پیلا ستارہ */
+html, body { overflow-x: clip; }
+.tn {
+  --navy: #12213f; --orange: #ff7a2f; --green: #0fae78; --yellow: #ffc933; --pink: #ff5c8a;
+  --sky: #eaf4ff; --peach: #ffe9d4; --mint: #d9f6e8;
+  --line: 3px solid var(--navy); --pop: 5px 5px 0 var(--navy);
+  position: relative; background: var(--sky); color: var(--navy); font-family: var(--font-urdu);
+}
+.tn-scroll { height: 420vh; position: relative; }
+.tn-stage { position: sticky; top: 0; height: 100vh; height: 100svh; overflow: hidden;
+  background:
+    radial-gradient(rgba(18,33,63,.13) 1.6px, transparent 1.7px) 0 0 / 26px 26px,
+    linear-gradient(180deg, #eaf4ff 0%, #fff1de 100%); }
+#tnCanvas { position: absolute; inset: 0; width: 100%; height: 100%; display: block; touch-action: pan-y; }
+
+.tn-head { position: absolute; top: calc(env(safe-area-inset-top, 0px) + 84px); inset-inline: 0; text-align: center; padding: 0 16px; z-index: 2; pointer-events: none; }
+.tn-head h2 { display: inline-block; padding: .05em .7em; font-size: clamp(1.5rem, 5.2vw, 2.6rem); line-height: 1.8; color: var(--navy);
+  background: var(--yellow); border: var(--line); border-radius: 18px; box-shadow: var(--pop); transform: rotate(-2deg); animation: tnWag 4s ease-in-out infinite; }
+@keyframes tnWag { 50% { transform: rotate(1.5deg) translateY(-3px); } }
+.tn-captions { position: absolute; inset-inline: 0; bottom: calc(env(safe-area-inset-bottom, 0px) + 56px); height: 160px; padding: 0 16px; z-index: 2; pointer-events: none; }
+.tn-cap { position: absolute; inset-inline: 0; margin: auto; max-width: 560px; text-align: center; padding: 8px 18px 10px; background: #fff; border: var(--line); border-radius: 20px; box-shadow: var(--pop);
+  opacity: 0; transform: translateY(24px) rotate(2deg) scale(.9); transition: opacity .45s ease, transform .6s cubic-bezier(.2,1.4,.4,1); }
+.tn-cap.on { opacity: 1; transform: none; }
+.tn-cap b { display: block; font-size: clamp(1.1rem, 4vw, 1.5rem); margin-bottom: 2px; line-height: 1.8; }
+.tn-cap:nth-child(1) b { color: var(--navy); }
+.tn-cap:nth-child(2) b { color: #d9560f; }
+.tn-cap:nth-child(3) b { color: #078a5c; }
+.tn-cap span { font-size: clamp(.9rem, 3.2vw, 1.05rem); color: #3b4a6b; line-height: 2.05; }
+.tn-dots { position: absolute; bottom: calc(env(safe-area-inset-bottom, 0px) + 20px); inset-inline: 0; display: flex; justify-content: center; gap: 10px; z-index: 2; }
+.tn-dots i { width: 40px; height: 10px; border-radius: 10px; background: #fff; border: 2px solid var(--navy); overflow: hidden; position: relative; }
+.tn-dots i::after { content: ""; position: absolute; inset: 0; background: var(--orange); transform-origin: right; transform: scaleX(var(--f, 0)); }
+.tn-hint { position: absolute; top: calc(env(safe-area-inset-top, 0px) + 155px); inset-inline: 0; text-align: center; font-size: .95rem; color: var(--navy); z-index: 2; animation: tnBob 1.4s ease-in-out infinite; transition: opacity .4s; pointer-events: none; }
+@keyframes tnBob { 50% { transform: translateY(9px); } }
+
+/* ---------- نیچے کا حصہ ---------- */
+.tn-body { padding: 72px 16px 90px; background: linear-gradient(#fff1de, var(--sky)); }
+.tn-wrap { max-width: 1000px; margin-inline: auto; }
+.tn-compare { display: grid; grid-template-columns: 1fr; gap: 18px; }
+.tn-row { display: grid; grid-template-columns: 1fr; gap: 10px; }
+.tn-topic { justify-self: center; padding: 0 18px; font-size: 1.05rem; line-height: 2; background: var(--yellow); border: var(--line); border-radius: 999px; opacity: 0; transform: scale(.6); transition: opacity .4s, transform .6s cubic-bezier(.2,1.6,.4,1); }
+.tn-row.in .tn-topic { opacity: 1; transform: none; }
+.tn-pair { display: grid; grid-template-columns: 1fr 1fr; gap: 12px; }
+.tn-side { padding: 12px 12px 10px; border: var(--line); border-radius: 18px; background: var(--peach); box-shadow: var(--pop); font-size: .95rem; line-height: 2;
+  opacity: 0; transform: translateX(-60px) rotate(-4deg); transition: opacity .5s ease, transform .8s cubic-bezier(.2,1.5,.4,1), box-shadow .2s; }
+.tn-side.m { background: var(--mint); transform: translateX(60px) rotate(4deg); }
+.tn-row.in .tn-side, .tn-row.in .tn-side.m { opacity: 1; transform: none; }
+.tn-row.in .tn-side:hover { transform: translate(-3px,-3px); box-shadow: 8px 8px 0 var(--navy); }
+.tn-side small { display: inline-block; padding: 0 12px; margin-bottom: 4px; font-size: .78rem; line-height: 1.9; color: #fff; background: var(--orange); border: 2px solid var(--navy); border-radius: 999px; }
+.tn-side.m small { background: var(--green); }
+.tn-sub { text-align: center; font-size: clamp(1.4rem, 5vw, 2rem); margin: 60px 0 26px; line-height: 1.8; }
+.tn-sub::after { content: ""; display: block; width: 90px; height: 8px; margin: 2px auto 0; border-radius: 8px; background: repeating-linear-gradient(90deg, var(--orange) 0 18px, var(--green) 18px 36px); }
+.tn-sub:first-child { margin-top: 0; }
+.tn-stats { display: grid; grid-template-columns: repeat(2, 1fr); gap: 16px; }
+.tn-stat { text-align: center; padding: 20px 8px; border: var(--line); border-radius: 22px; box-shadow: var(--pop); background: #fff; opacity: 0; transform: scale(.5) rotate(-8deg); transition: opacity .4s, transform .8s cubic-bezier(.2,1.7,.4,1); }
+.tn-stat:nth-child(1) { background: var(--peach); } .tn-stat:nth-child(2) { background: var(--mint); }
+.tn-stat:nth-child(3) { background: #fff3c4; } .tn-stat:nth-child(4) { background: #ffdbe6; }
+.tn-stat.in { opacity: 1; transform: none; }
+.tn-stat:nth-child(even).in { transform: rotate(1.5deg); } .tn-stat:nth-child(odd).in { transform: rotate(-1.5deg); }
+.tn-stat strong { display: block; font-size: clamp(1.9rem, 8vw, 2.9rem); font-family: Arial Black, Arial, sans-serif; line-height: 1.4; }
+.tn-stat span { font-size: .95rem; color: #3b4a6b; line-height: 1.9; display: block; padding: 0 4px; }
+.tn-steps { position: relative; display: grid; gap: 18px; padding-inline-start: 34px; }
+.tn-steps::before { content: ""; position: absolute; inset-block: 6px; inset-inline-start: 9px; width: 6px; border: 2px solid var(--navy); border-radius: 6px; background: linear-gradient(var(--orange), var(--green)); transform-origin: top; transform: scaleY(var(--tl, 0)); }
+.tn-step { position: relative; padding: 12px 16px; border: var(--line); border-radius: 18px; background: #fff; box-shadow: var(--pop); opacity: 0; transform: translateX(var(--dx, -40px)) rotate(-2deg); transition: opacity .5s, transform .8s cubic-bezier(.2,1.5,.4,1); }
+.tn-step.in { opacity: 1; transform: none; }
+.tn-step::before { content: ""; position: absolute; inset-inline-start: -34px; top: 20px; width: 20px; height: 20px; border-radius: 50%; background: var(--yellow); border: 3px solid var(--navy); }
+.tn-step:nth-child(even)::before { background: var(--pink); }
+.tn-step h4 { font-size: 1.1rem; line-height: 1.9; color: var(--navy); }
+.tn-step p { font-size: .95rem; line-height: 2.1; color: #3b4a6b; }
+.tn-note { margin-top: 42px; text-align: center; font-size: .85rem; color: #5a6a8c; line-height: 2; }
+@media (min-width: 768px) {
+  .tn-row { grid-template-columns: 170px 1fr; align-items: center; }
+  .tn-topic { justify-self: start; }
+  .tn-side { font-size: 1rem; padding: 14px 18px 12px; }
+  .tn-stats { grid-template-columns: repeat(4, 1fr); }
+  .tn-steps { --dx: 50px; }
+}
+@media (prefers-reduced-motion: reduce) {
+  .tn-hint, .tn-head h2 { animation: none; }
+  .tn-topic, .tn-side, .tn-step, .tn-stat, .tn-cap { transition: none; opacity: 1; transform: none; }
+  .tn-cap:not(.on) { opacity: 0; }
+}
+
+/* ===== ٹائم لائن کارڈ: دو قومیں ===== */
+.tnm-stage { --far: 92px; position: relative; height: 210px; margin: 16px 6px 12px 0; border: 3px solid #12213f; border-radius: 18px; overflow: hidden; box-shadow: 5px 5px 0 #12213f;
+  background: radial-gradient(#12213f22 1.5px, transparent 1.6px) 0 0 / 20px 20px, #eaf4ff; }
+.tnm-orb { position: absolute; top: 50%; left: 50%; width: 118px; height: 118px; margin: -69px 0 0 -59px; border-radius: 50%; border: 3px solid #12213f;
+  display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 2px; color: #fff;
+  transform: translateX(var(--x)); transition: transform 1.2s cubic-bezier(.3,1.5,.5,1); }
+.tnm-orb i { font-size: 1.7rem; line-height: 1.2; } .tnm-orb b { font-size: 1.05rem; line-height: 1.8; }
+.tnm-orb.h { --x: 28px; background: #ff7a2f; } .tnm-orb.m { --x: -28px; background: #0fae78; mix-blend-mode: multiply; }
+.tnm-stage.go .tnm-orb.h { --x: calc(var(--far) * -1); }
+.tnm-stage.go .tnm-orb.m { --x: var(--far); mix-blend-mode: normal; animation: tnmBounce 2.4s ease-in-out 1.3s infinite; }
+@keyframes tnmBounce { 50% { transform: translateX(var(--far)) translateY(-8px); } }
+.tnm-line { position: absolute; top: 50%; left: 50%; width: 0; margin-top: -38px; height: 76px; border-inline-start: 3px dashed #12213f; opacity: 0; transition: opacity .5s ease 1s; }
+.tnm-stage.go .tnm-line { opacity: 1; }
+.tnm-badge { position: absolute; left: 50%; bottom: 12px; transform: translate(-50%, 16px) scale(.6); opacity: 0; white-space: nowrap; padding: 0 16px; border-radius: 999px;
+  font-size: .92rem; line-height: 2.1; color: #12213f; background: #ffc933; border: 3px solid #12213f; transition: all .6s cubic-bezier(.2,1.7,.4,1) 1.2s; }
+.tnm-stage.go .tnm-badge { opacity: 1; transform: translate(-50%, 0); }
+.tnm-chips { display: flex; flex-wrap: wrap; gap: 8px; margin-top: 10px; }
+.tnm-chips span { padding: 0 14px; border-radius: 999px; font-size: .85rem; line-height: 2.1; color: #12213f; background: #fff; border: 2px solid #12213f;
+  opacity: 0; transform: translateY(12px) scale(.7); transition: opacity .4s ease, transform .5s cubic-bezier(.2,1.7,.4,1); }
+.tnm-chips span:nth-child(odd) { background: #ffe9d4; } .tnm-chips span:nth-child(even) { background: #d9f6e8; }
+.tnm-chips.go span { opacity: 1; transform: none; }
+.tnm-chips.go span:nth-child(1) { transition-delay: 1.3s; } .tnm-chips.go span:nth-child(2) { transition-delay: 1.45s; }
+.tnm-chips.go span:nth-child(3) { transition-delay: 1.6s; } .tnm-chips.go span:nth-child(4) { transition-delay: 1.75s; }
+@media (max-width: 480px) { .tnm-stage { --far: 72px; height: 190px; } .tnm-orb { width: 98px; height: 98px; margin: -59px 0 0 -49px; } .tnm-orb i { font-size: 1.4rem; } .tnm-orb b { font-size: .95rem; } }
+@media (prefers-reduced-motion: reduce) { .tnm-orb, .tnm-badge, .tnm-line, .tnm-chips span { transition: none !important; animation: none !important; } }

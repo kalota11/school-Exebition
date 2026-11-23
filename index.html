@@ -1,0 +1,1732 @@
+<!DOCTYPE html>
+<html lang="ur" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+
+    <title>قیامِ پاکستان سے قبل کیا ہوا اور کیسے ہوا؟</title>
+
+    <!-- Google Fonts for Urdu -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Amiri:wght@400;700&family=Noto+Nastaliq+Urdu:wght@400;700&display=swap"
+        rel="stylesheet"
+    >
+
+    <!-- Font Awesome -->
+    <link
+        rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    >
+
+    <!-- Main Stylesheet -->
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="two-nation.css">
+
+    <!-- Responsive fallback -->
+    <style>
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body {
+            margin: 0;
+            overflow-x: hidden;
+        }
+
+        img,
+        video,
+        iframe {
+            max-width: 100%;
+            height: auto;
+        }
+
+        button,
+        a {
+            -webkit-tap-highlight-color: transparent;
+        }
+
+        @media (max-width: 768px) {
+            .container {
+                width: min(100% - 28px, 1100px);
+                margin-inline: auto;
+            }
+
+            .hero {
+                min-height: 100svh;
+            }
+
+            .hero-content {
+                padding-inline: 14px;
+            }
+
+            .hero-title {
+                font-size: clamp(2rem, 9vw, 3.5rem);
+                line-height: 1.45;
+            }
+
+            .hero-subtitle,
+            .section-description,
+            .body-text,
+            .lead-text {
+                line-height: 2;
+            }
+
+            .events-grid,
+            .cards-container,
+            .summary-content {
+                grid-template-columns: 1fr !important;
+            }
+
+            .timeline {
+                width: 100%;
+                padding-left: 30px;
+                padding-right: 10px;
+            }
+
+            .timeline::before {
+                left: 15px !important;
+                display: block !important;
+            }
+
+            .timeline-item {
+                width: 100% !important;
+                padding-left: 25px !important;
+                padding-right: 0 !important;
+                margin-left: 0 !important;
+                margin-right: 0 !important;
+            }
+
+            .timeline-content {
+                width: 100% !important;
+                box-sizing: border-box;
+                padding: 15px !important;
+            }
+
+            .timeline-marker {
+                left: -40px !important;
+                position: absolute !important;
+                inset: auto auto auto -40px !important;
+                margin: 0 !important;
+            }
+
+            .timeline-item::before {
+                display: block !important;
+                left: -30px !important;
+                top: 20px !important;
+                width: 20px !important;
+                height: 2px !important;
+            }
+
+            .journey-path {
+                display: flex;
+                flex-direction: column;
+                align-items: stretch;
+                gap: 12px;
+            }
+
+            .journey-connector {
+                width: 2px;
+                height: 28px;
+                margin: 0 auto;
+            }
+
+            .journey-step {
+                width: 100% !important;
+            }
+
+            .step-marker {
+                max-width: 100%;
+                box-sizing: border-box;
+            }
+
+            .nav-links {
+                max-width: calc(100vw - 28px);
+            }
+
+            .footer-content {
+                text-align: center;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .section {
+                padding-block: 56px;
+            }
+
+            .section-title {
+                font-size: 1.8rem;
+            }
+
+            .timeline-content {
+                padding: 18px !important;
+            }
+
+            .timeline-content h3 {
+                font-size: 1.15rem;
+                line-height: 1.7;
+            }
+
+            .timeline-content p {
+                font-size: 0.95rem;
+                line-height: 2;
+            }
+
+            .hero-buttons .btn {
+                width: 100%;
+                box-sizing: border-box;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Floating Particles -->
+    <div class="particles-container" id="particles"></div>
+
+
+    <!-- ================= NAVIGATION ================= -->
+
+    <nav class="navbar" id="navbar">
+
+        <div class="nav-container">
+
+            <a href="#home" class="nav-logo">
+
+                <span class="logo-icon">
+                    <i class="fas fa-mosque"></i>
+                </span>
+
+                <span class="logo-text">
+                    پاکستان
+                </span>
+
+            </a>
+
+
+            <ul class="nav-links" id="navLinks">
+
+                <li>
+                    <a href="#home" class="nav-link">
+                        ہوم
+                    </a>
+                </li>
+
+                <li>
+                    <a href="#history" class="nav-link">
+                        تاریخ
+                    </a>
+                </li>
+
+                <li>
+                    <a href="#two-nation" class="nav-link">
+                        دو قومی نظریہ
+                    </a>
+                </li>
+
+                <li>
+                    <a href="#events" class="nav-link">
+                        اہم واقعات
+                    </a>
+                </li>
+
+                <li>
+                    <a href="#timeline" class="nav-link">
+                        ٹائم لائن
+                    </a>
+                </li>
+
+                <li>
+                    <a href="#journey" class="nav-link">
+                        سفر
+                    </a>
+                </li>
+
+                <li>
+                    <a href="#summary" class="nav-link">
+                        خلاصہ
+                    </a>
+                </li>
+
+            </ul>
+
+
+            <button
+                class="nav-toggle"
+                id="navToggle"
+                aria-label="Menu"
+            >
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+
+        </div>
+
+    </nav>
+
+
+
+    <!-- ================= HERO ================= -->
+
+    <section class="hero" id="home">
+
+        <div class="hero-overlay"></div>
+
+
+        <div class="hero-background">
+
+            <div
+                class="parallax-layer layer-1"
+                data-speed="0.1"
+            ></div>
+
+            <div
+                class="parallax-layer layer-2"
+                data-speed="0.3"
+            ></div>
+
+            <div
+                class="parallax-layer layer-3"
+                data-speed="0.5"
+            ></div>
+
+        </div>
+
+
+        <div class="hero-content">
+
+            <div class="hero-text-container">
+
+                <h1 class="hero-title">
+
+                    <span class="title-line">
+                        قیامِ پاکستان سے قبل
+                    </span>
+
+                    <span class="title-line highlight">
+                        کیا ہوا اور کیسے ہوا؟
+                    </span>
+
+                </h1>
+
+
+                <p class="hero-subtitle">
+                    برصغیر کے مسلمانوں کی جدوجہد، اہم واقعات اور پاکستان کے قیام کا سفر
+                </p>
+
+
+                <div class="hero-buttons">
+
+                    <a
+                        href="#timeline"
+                        class="btn btn-primary btn-cta"
+                    >
+
+                        <span class="btn-text">
+                            تاریخ کا سفر شروع کریں
+                        </span>
+
+                        <span class="btn-icon">
+                            <i class="fas fa-arrow-down"></i>
+                        </span>
+
+                    </a>
+
+                </div>
+
+            </div>
+
+
+            <div class="hero-visual">
+
+                <div class="flag-silhouette"></div>
+
+                <div class="minaret-silhouette"></div>
+
+            </div>
+
+        </div>
+
+
+        <div class="scroll-indicator">
+
+            <div class="mouse">
+                <div class="wheel"></div>
+            </div>
+
+            <span>
+                نیچے سکرول کریں
+            </span>
+
+        </div>
+
+    </section>
+
+
+
+    <!-- ================= HISTORY ================= -->
+
+    <section
+        class="section section-history"
+        id="history"
+    >
+
+        <div class="section-overlay"></div>
+
+
+        <div class="container">
+
+            <div class="section-header">
+
+                <h2 class="section-title">
+                    قیامِ پاکستان سے قبل برصغیر کے حالات
+                </h2>
+
+
+                <div class="section-divider">
+
+                    <span class="divider-line"></span>
+
+                    <span class="divider-icon">
+                        <i class="fas fa-star"></i>
+                    </span>
+
+                    <span class="divider-line"></span>
+
+                </div>
+
+            </div>
+
+
+            <div class="history-content">
+
+                <div class="history-intro">
+
+                    <p class="lead-text">
+                        برصغیر میں مسلمانوں کے لیے ایک الگ اور آزاد وطن کی ضرورت کیوں پیش آئی؟
+                    </p>
+
+
+                    <p class="body-text">
+                        قیامِ پاکستان کو سمجھنے کے لیے برصغیر کے مسلمانوں کے حالات اور ان کے ساتھ ہونے والے اہم واقعات کو جاننا ضروری ہے۔
+                        مسلمانوں نے طویل سیاسی، تعلیمی اور سماجی جدوجہد کے بعد اپنا الگ وطن حاصل کیا۔
+                    </p>
+
+                </div>
+
+
+                <div class="cards-container">
+
+
+                    <!-- CARD 1 -->
+
+                    <div class="card card-1">
+
+                        <div class="card-icon">
+                            <i class="fas fa-book-quran"></i>
+                        </div>
+
+
+                        <div class="card-content">
+
+                            <h3>
+                                مغل حکومت کا زوال
+                            </h3>
+
+                            <p>
+                                مغل سلطنت کے خاتمے کے بعد برصغیر میں مسلمانوں کی سیاسی طاقت کمزور ہوگئی اور انگریزوں نے اقتدار حاصل کر لیا۔
+                            </p>
+
+                        </div>
+
+
+                        <div class="card-glow"></div>
+
+                    </div>
+
+
+
+                    <!-- CARD 2 -->
+
+                    <div class="card card-2">
+
+                        <div class="card-icon">
+                            <i class="fas fa-graduation-cap"></i>
+                        </div>
+
+
+                        <div class="card-content">
+
+                            <h3>
+                                تعلیمی پسماندگی
+                            </h3>
+
+                            <p>
+                                مسلمانوں کو تعلیم سے دور رکھا گیا اور ان کی معاشی اور سماجی حالت خراب ہوگئی۔
+                            </p>
+
+                        </div>
+
+
+                        <div class="card-glow"></div>
+
+                    </div>
+
+
+
+                    <!-- CARD 3 -->
+
+                    <div class="card card-3">
+
+                        <div class="card-icon">
+                            <i class="fas fa-balance-scale"></i>
+                        </div>
+
+
+                        <div class="card-content">
+
+                            <h3>
+                                سیاسی بے حسی
+                            </h3>
+
+                            <p>
+                                برطانوی حکمرانوں نے مسلمانوں کو سیاسی حقوق سے محروم رکھا اور ہندو اکثریت کو ترجیح دی۔
+                            </p>
+
+                        </div>
+
+
+                        <div class="card-glow"></div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+
+    <!-- ================= TWO NATION THEORY ================= -->
+
+    <section class="tn" id="two-nation">
+
+        <div class="tn-scroll" id="tnScroll">
+            <div class="tn-stage">
+                <canvas id="tnCanvas" aria-hidden="true"></canvas>
+                <div class="tn-head"><h2>دو قومی نظریہ</h2></div>
+                <div class="tn-hint">نیچے سکرول کریں ↓</div>
+
+                <div class="tn-captions">
+                    <div class="tn-cap on"><b>ایک برصغیر، ایک ساتھ</b><span>صدیوں تک ہندو اور مسلمان ایک ہی سرزمین پر ساتھ رہے۔</span></div>
+                    <div class="tn-cap"><b>مگر دو الگ قومیں</b><span>نظریے کے مطابق مذہب، ثقافت، تاریخ اور طرزِ زندگی کے فرق نے دونوں کو الگ شناخت دی۔</span></div>
+                    <div class="tn-cap"><b>اور ایک الگ وطن کا مطالبہ</b><span>اسی نظریے نے پاکستان کے مطالبے کو علمی اساس فراہم کی۔</span></div>
+                </div>
+                <div class="tn-dots"><i></i><i></i><i></i></div>
+            </div>
+        </div>
+
+        <div class="tn-body">
+            <div class="tn-wrap">
+
+                <h3 class="tn-sub">دونوں قوموں میں فرق (نظریے کے مطابق)</h3>
+                <div class="tn-compare">
+                    <div class="tn-row"><div class="tn-topic">مذہب</div><div class="tn-pair">
+                        <div class="tn-side"><small>ہندو</small>ہندو مت، متعدد دیوی دیوتا</div>
+                        <div class="tn-side m"><small>مسلمان</small>اسلام، توحید کا عقیدہ</div></div></div>
+                    <div class="tn-row"><div class="tn-topic">معاشرت</div><div class="tn-pair">
+                        <div class="tn-side"><small>ہندو</small>ذات پات پر مبنی سماجی ڈھانچہ</div>
+                        <div class="tn-side m"><small>مسلمان</small>مساوات کا تصور</div></div></div>
+                    <div class="tn-row"><div class="tn-topic">تاریخ و ہیرو</div><div class="tn-pair">
+                        <div class="tn-side"><small>ہندو</small>الگ تاریخی حوالے اور ہیرو</div>
+                        <div class="tn-side m"><small>مسلمان</small>الگ تاریخی حوالے اور ہیرو</div></div></div>
+                    <div class="tn-row"><div class="tn-topic">زبان و تہذیب</div><div class="tn-pair">
+                        <div class="tn-side"><small>ہندو</small>سنسکرت و ہندی روایت</div>
+                        <div class="tn-side m"><small>مسلمان</small>عربی، فارسی و اردو روایت</div></div></div>
+                    <div class="tn-row"><div class="tn-topic">تہوار و رسوم</div><div class="tn-pair">
+                        <div class="tn-side"><small>ہندو</small>دیوالی، ہولی وغیرہ</div>
+                        <div class="tn-side m"><small>مسلمان</small>عیدین، محرم، میلادِ نبی ﷺ</div></div></div>
+                </div>
+
+                <h3 class="tn-sub">اعداد میں سفر</h3>
+                <div class="tn-stats">
+                    <div class="tn-stat" data-count="1906"><strong>1800</strong><span>مسلم لیگ کا قیام</span></div>
+                    <div class="tn-stat" data-count="1930"><strong>1800</strong><span>علامہ اقبال کا خطبۂ الٰہ آباد</span></div>
+                    <div class="tn-stat" data-count="1940"><strong>1800</strong><span>قراردادِ لاہور</span></div>
+                    <div class="tn-stat" data-count="7"><strong>0</strong><span>سال: قرارداد سے قیامِ پاکستان تک</span></div>
+                </div>
+
+                <h3 class="tn-sub">نظریے کا ارتقا</h3>
+                <div class="tn-steps">
+                    <div class="tn-step"><h4>سر سید احمد خان</h4><p>انیسویں صدی کے آخر میں مسلمانوں کی الگ سیاسی و تعلیمی شناخت کی بات نمایاں ہوئی۔</p></div>
+                    <div class="tn-step"><h4>علامہ اقبال — 1930</h4><p>خطبۂ الٰہ آباد میں شمال مغرب کے مسلم اکثریتی علاقوں پر مشتمل ایک مسلم ریاست کا تصور پیش کیا۔</p></div>
+                    <div class="tn-step"><h4>قائداعظم — 1940</h4><p>لاہور کے اجلاس میں مسلم لیگ نے قرارداد منظور کی اور جناح نے دو قوموں کی بنیاد پر مطالبہ واضح کیا۔</p></div>
+                    <div class="tn-step"><h4>14 اگست 1947</h4><p>یہ مطالبہ پاکستان کے قیام کی صورت میں حقیقت بن گیا۔</p></div>
+                </div>
+
+                <p class="tn-note">یہ سیکشن نظریۂ دو قوم کے حامیوں کا بیان کردہ موقف پیش کرتا ہے۔</p>
+            </div>
+        </div>
+    </section>
+
+
+
+    <!-- ================= EVENTS ================= -->
+
+    <section
+        class="section section-events"
+        id="events"
+    >
+
+        <div class="container">
+
+            <div class="section-header light">
+
+                <h2 class="section-title">
+                    اہم واقعات
+                </h2>
+
+
+                <div class="section-divider light">
+
+                    <span class="divider-line"></span>
+
+                    <span class="divider-icon">
+                        <i class="fas fa-clock"></i>
+                    </span>
+
+                    <span class="divider-line"></span>
+
+                </div>
+
+
+                <p class="section-description">
+                    وہ اہم واقعات جنہوں نے پاکستان کے قیام کی راہ ہموار کرنے میں کلیدی کردار ادا کیا
+                </p>
+
+            </div>
+
+
+
+            <div class="events-grid">
+
+
+                <!-- 1857 -->
+
+                <div
+                    class="event-card"
+                    data-aos="fade-up"
+                >
+
+                    <div class="event-date">
+                        1857
+                    </div>
+
+                    <div class="event-icon">
+                        <i class="fas fa-exclamation-triangle"></i>
+                    </div>
+
+                    <h3>
+                        جنگِ آزادی
+                    </h3>
+
+                    <p>
+                        1857 کی جنگِ آزادی کے بعد مسلمانوں کو سخت مشکلات اور پابندیوں کا سامنا کرنا پڑا۔
+                    </p>
+
+                </div>
+
+
+
+                <!-- 1867 -->
+
+                <div
+                    class="event-card"
+                    data-aos="fade-up"
+                    data-aos-delay="100"
+                >
+
+                    <div class="event-date">
+                        1867
+                    </div>
+
+                    <div class="event-icon">
+                        <i class="fas fa-book-open"></i>
+                    </div>
+
+                    <h3>
+                        علی گڑھ کالج
+                    </h3>
+
+                    <p>
+                        سر سید احمد خان نے علی گڑھ میں مدرسۃ العلوم کی بنیاد رکھی اور مسلمانوں میں جدید تعلیم کے فروغ کی تحریک شروع کی۔
+                    </p>
+
+                </div>
+
+
+
+                <!-- 1906 -->
+
+                <div
+                    class="event-card"
+                    data-aos="fade-up"
+                    data-aos-delay="200"
+                >
+
+                    <div class="event-date">
+                        1906
+                    </div>
+
+                    <div class="event-icon">
+                        <i class="fas fa-flag"></i>
+                    </div>
+
+                    <h3>
+                        مسلم لیگ
+                    </h3>
+
+                    <p>
+                        آل انڈیا مسلم لیگ کا قیام عمل میں آیا۔
+                    </p>
+
+                </div>
+
+
+
+                <!-- 1930 -->
+
+                <div
+                    class="event-card"
+                    data-aos="fade-up"
+                    data-aos-delay="300"
+                >
+
+                    <div class="event-date">
+                        1930
+                    </div>
+
+                    <div class="event-icon">
+                        <i class="fas fa-user-tie"></i>
+                    </div>
+
+                    <h3>
+                        قائداعظم
+                    </h3>
+
+                    <p>
+                        محمد علی جناح مسلم لیگ کے صدر منتخب ہوئے۔
+                    </p>
+
+                </div>
+
+
+
+                <!-- 1940 -->
+
+                <div
+                    class="event-card"
+                    data-aos="fade-up"
+                    data-aos-delay="400"
+                >
+
+                    <div class="event-date">
+                        1940
+                    </div>
+
+                    <div class="event-icon">
+                        <i class="fas fa-file-alt"></i>
+                    </div>
+
+                    <h3>
+                        قراردادِ لاہور
+                    </h3>
+
+                    <p>
+                        پاکستان کا مطالبہ رسمی طور پر پیش کیا گیا۔
+                    </p>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+
+    <!-- ================= TIMELINE ================= -->
+
+    <section
+        class="section section-timeline"
+        id="timeline"
+    >
+
+        <div class="timeline-background"></div>
+
+
+        <div class="container">
+
+
+            <div class="section-header">
+
+                <h2 class="section-title">
+                    ٹائم لائن
+                </h2>
+
+
+                <div class="section-divider">
+
+                    <span class="divider-line"></span>
+
+                    <span class="divider-icon">
+                        <i class="fas fa-stream"></i>
+                    </span>
+
+                    <span class="divider-line"></span>
+
+                </div>
+
+
+                <p class="section-description">
+                    پاکستان کے قیام تک پہنچنے والی طویل راہ پر واقعات کی تاریخ
+                </p>
+
+            </div>
+
+
+
+            <div class="timeline">
+
+
+                <!-- EVENT 1 -->
+
+                <div
+                    class="timeline-item"
+                    data-aos="fade-right"
+                >
+
+                    <div class="timeline-marker">
+
+                        <span class="marker-year">
+                            1857
+                        </span>
+
+                    </div>
+
+
+                    <div class="timeline-content">
+
+                        <div class="timeline-icon">
+                            <i class="fas fa-calendar-alt"></i>
+                        </div>
+
+
+                        <h3>
+                            مسلمانوں کا زوال، انگریزوں کی آمد اور 1857ء کے بعد کے حالات
+                        </h3>
+
+
+                        <p>
+                            برصغیر میں مغل حکومت کے زوال کے بعد انگریزوں کا اقتدار مضبوط ہوتا گیا۔
+                            1857ء کی جنگِ آزادی کے بعد مسلمانوں کو خاص طور پر مشکلات کا سامنا کرنا پڑا
+                            اور وہ تعلیمی، معاشی اور سیاسی طور پر پیچھے رہ گئے۔
+                        </p>
+
+
+                        <div class="timeline-effect"></div>
+
+                    </div>
+
+                </div>
+
+
+
+                <!-- EVENT 2 -->
+
+                <div
+                    class="timeline-item"
+                    data-aos="fade-left"
+                >
+
+                    <div class="timeline-marker">
+
+                        <span class="marker-year">
+                            1867
+                        </span>
+
+                    </div>
+
+
+                    <div class="timeline-content">
+
+                        <div class="timeline-icon">
+                            <i class="fas fa-user-graduate"></i>
+                        </div>
+
+
+                        <h3>
+                            سر سید احمد خان کی تعلیمی تحریک
+                        </h3>
+
+
+                        <p>
+                            سر سید احمد خان نے مسلمانوں کو جدید تعلیم کی طرف راغب کیا۔
+                            انہوں نے علی گڑھ میں تعلیمی تحریک شروع کی تاکہ مسلمان جدید علوم حاصل کر کے ترقی کر سکیں۔
+                        </p>
+
+
+                        <div class="timeline-effect"></div>
+
+                    </div>
+
+                </div>
+
+
+
+                <!-- EVENT 3 -->
+
+                <div
+                    class="timeline-item"
+                    data-aos="fade-right"
+                >
+
+                    <div class="timeline-marker">
+
+                        <span class="marker-year">
+                            1906
+                        </span>
+
+                    </div>
+
+
+                    <div class="timeline-content">
+
+                        <div class="timeline-icon">
+                            <i class="fas fa-flag-checkered"></i>
+                        </div>
+
+
+                        <h3>
+                            آل انڈیا مسلم لیگ کا قیام — 1906ء
+                        </h3>
+
+
+                        <p>
+                            1906ء میں آل انڈیا مسلم لیگ قائم ہوئی۔
+                            اس جماعت نے برصغیر کے مسلمانوں کے سیاسی حقوق کے تحفظ اور نمائندگی کے لیے اہم کردار ادا کیا۔
+                        </p>
+
+
+                        <div class="timeline-effect"></div>
+
+                    </div>
+
+                </div>
+
+
+
+                <!-- EVENT 4 -->
+
+                <div
+                    class="timeline-item"
+                    data-aos="fade-left"
+                >
+
+                    <div class="timeline-marker">
+
+                        <span class="marker-year">
+                            1930s
+                        </span>
+
+                    </div>
+
+
+                    <div class="timeline-content">
+
+                        <div class="timeline-icon">
+                            <i class="fas fa-globe"></i>
+                        </div>
+
+
+                        <h3>
+                            دو قومی نظریہ
+                        </h3>
+
+
+                        <p>
+                            دو قومی نظریے کے مطابق ہندو اور مسلمان مذہب، ثقافت، تاریخ اور طرزِ زندگی کے لحاظ سے دو الگ قومیں تھیں۔
+                            اس نظریے نے پاکستان کے مطالبے کو علمی اساس فراہم کی۔
+                        </p>
+
+                        <div class="tnm-stage" id="tnmStage" aria-hidden="true">
+                            <div class="tnm-orb h"><i class="fas fa-om"></i><b>ہندو</b></div>
+                            <div class="tnm-orb m"><i class="fas fa-star-and-crescent"></i><b>مسلمان</b></div>
+                            <div class="tnm-line"></div>
+                            <div class="tnm-badge">دو الگ قومیں</div>
+                        </div>
+
+                        <div class="tnm-chips">
+                            <span>مذہب</span><span>ثقافت</span><span>تاریخ</span><span>طرزِ زندگی</span>
+                        </div>
+
+
+                        <div class="timeline-effect"></div>
+
+                    </div>
+
+                </div>
+
+
+
+                <!-- EVENT 5 -->
+
+                <div
+                    class="timeline-item highlight"
+                    data-aos="zoom-in"
+                >
+
+                    <div class="timeline-marker special">
+
+                        <span class="marker-year">
+                            23 مارچ 1940
+                        </span>
+
+                        <span class="marker-label">
+                            قراردادِ لاہور
+                        </span>
+
+                    </div>
+
+
+                    <div class="timeline-content special">
+
+                        <div class="timeline-icon special">
+                            <i class="fas fa-landmark"></i>
+                        </div>
+
+
+                        <h3>
+                            قراردادِ لاہور — 23 مارچ 1940ء
+                        </h3>
+
+
+                        <p>
+                            23 مارچ 1940ء کو لاہور میں قائداعظم محمد علی جناح کی قیادت میں مسلمانوں کے لیے ایک الگ ریاست کے قیام کا مطالبہ پیش کیا گیا۔
+                            یہ پاکستان کے قیام کا بنیادی سنگ میل تھا۔
+                        </p>
+
+
+                        <div class="lahore-animation">
+
+                            <div class="flag-wave"></div>
+
+                            <div class="particles burst"></div>
+
+                        </div>
+
+
+                        <div class="timeline-effect"></div>
+
+                    </div>
+
+                </div>
+
+
+
+                <!-- EVENT 6 -->
+
+                <div
+                    class="timeline-item"
+                    data-aos="fade-right"
+                >
+
+                    <div class="timeline-marker">
+
+                        <span class="marker-year">
+                            1940-1947
+                        </span>
+
+                    </div>
+
+
+                    <div class="timeline-content">
+
+                        <div class="timeline-icon">
+                            <i class="fas fa-hands"></i>
+                        </div>
+
+
+                        <h3>
+                            تحریکِ پاکستان اور جدوجہد
+                        </h3>
+
+
+                        <p>
+                            مسلمانوں نے قائداعظم محمد علی جناح اور مسلم لیگ کی قیادت میں منظم اور پُرامن سیاسی جدوجہد کی۔
+                            مختلف سیاسی مہمات اور مذاکرات کے ذریعے پاکستان کے مطالبے کو آگے بڑھایا گیا۔
+                        </p>
+
+
+                        <div class="timeline-effect"></div>
+
+                    </div>
+
+                </div>
+
+
+
+                <!-- EVENT 7 -->
+
+                <div
+                    class="timeline-item highlight final"
+                    data-aos="fade-up"
+                >
+
+                    <div class="timeline-marker special">
+
+                        <span class="marker-year">
+                            14 اگست 1947
+                        </span>
+
+                        <span class="marker-label">
+                            قیامِ پاکستان
+                        </span>
+
+                    </div>
+
+
+                    <div class="timeline-content special final">
+
+                        <div class="timeline-icon special">
+                            <i class="fas fa-star"></i>
+                        </div>
+
+
+                        <h3>
+                            تقسیمِ ہند اور قیامِ پاکستان — 14 اگست 1947ء
+                        </h3>
+
+
+                        <p>
+                            آخرکار برصغیر کو تقسیم کر کے دو آزاد ممالک، پاکستان اور بھارت، وجود میں آئے۔
+                            14 اگست 1947ء کو پاکستان ایک آزاد ملک کے طور پر دنیا کے نقشے پر نمودار ہوا۔
+                        </p>
+
+
+                        <div
+                            class="flag-animation"
+                            id="finalFlag"
+                        >
+
+                            <div class="flag-pole"></div>
+
+                            <div class="flag-cloth">
+
+                                <div class="flag-green"></div>
+
+                                <div class="flag-white"></div>
+
+                                <div class="flag-star"></div>
+
+                                <div class="flag-crescent"></div>
+
+                            </div>
+
+                        </div>
+
+
+                        <div
+                            class="celebration-particles"
+                            id="celebrationParticles"
+                        ></div>
+
+
+                        <div class="timeline-effect"></div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+
+    <!-- ================= JOURNEY ================= -->
+
+    <section
+        class="section section-journey"
+        id="journey"
+    >
+
+        <div class="journey-overlay"></div>
+
+
+        <div class="container">
+
+
+            <div class="section-header light">
+
+                <h2 class="section-title">
+                    پاکستان کے قیام کا سفر
+                </h2>
+
+
+                <div class="section-divider light">
+
+                    <span class="divider-line"></span>
+
+                    <span class="divider-icon">
+                        <i class="fas fa-route"></i>
+                    </span>
+
+                    <span class="divider-line"></span>
+
+                </div>
+
+
+                <p class="section-description">
+                    1857 سے 1947 تک پاکستان کے قیام کا سفر ایک نظر میں
+                </p>
+
+            </div>
+
+
+
+            <div class="journey-path">
+
+
+                <!-- STEP 1 -->
+
+                <div
+                    class="journey-step step-1"
+                    data-aos="fade-in"
+                >
+
+                    <div class="step-marker">
+                        1857
+                    </div>
+
+                    <div class="step-content">
+
+                        <span class="step-arrow">
+                            <i class="fas fa-arrow-down"></i>
+                        </span>
+
+                        <h4>
+                            جنگِ آزادی
+                        </h4>
+
+                    </div>
+
+                </div>
+
+
+                <div class="journey-connector"></div>
+
+
+
+                <!-- STEP 2 -->
+
+                <div
+                    class="journey-step step-2"
+                    data-aos="fade-in"
+                    data-aos-delay="100"
+                >
+
+                    <div class="step-marker">
+                        سر سید احمد خان
+                    </div>
+
+                    <div class="step-content">
+
+                        <span class="step-arrow">
+                            <i class="fas fa-arrow-down"></i>
+                        </span>
+
+                        <h4>
+                            تعلیمی تحریک
+                        </h4>
+
+                    </div>
+
+                </div>
+
+
+                <div class="journey-connector"></div>
+
+
+
+                <!-- STEP 3 -->
+
+                <div
+                    class="journey-step step-3"
+                    data-aos="fade-in"
+                    data-aos-delay="200"
+                >
+
+                    <div class="step-marker">
+                        1906
+                    </div>
+
+                    <div class="step-content">
+
+                        <span class="step-arrow">
+                            <i class="fas fa-arrow-down"></i>
+                        </span>
+
+                        <h4>
+                            مسلم لیگ
+                        </h4>
+
+                    </div>
+
+                </div>
+
+
+                <div class="journey-connector"></div>
+
+
+
+                <!-- STEP 4 -->
+
+                <div
+                    class="journey-step step-4"
+                    data-aos="fade-in"
+                    data-aos-delay="300"
+                >
+
+                    <div class="step-marker">
+                        نظریۂ دو قوم
+                    </div>
+
+                    <div class="step-content">
+
+                        <span class="step-arrow">
+                            <i class="fas fa-arrow-down"></i>
+                        </span>
+
+                        <h4>
+                            علمی بنیاد
+                        </h4>
+
+                    </div>
+
+                </div>
+
+
+                <div class="journey-connector"></div>
+
+
+
+                <!-- STEP 5 -->
+
+                <div
+                    class="journey-step step-5"
+                    data-aos="fade-in"
+                    data-aos-delay="400"
+                >
+
+                    <div class="step-marker">
+                        1940
+                    </div>
+
+                    <div class="step-content">
+
+                        <span class="step-arrow">
+                            <i class="fas fa-arrow-down"></i>
+                        </span>
+
+                        <h4>
+                            قراردادِ لاہور
+                        </h4>
+
+                    </div>
+
+                </div>
+
+
+                <div class="journey-connector"></div>
+
+
+
+                <!-- STEP 6 -->
+
+                <div
+                    class="journey-step step-6"
+                    data-aos="fade-in"
+                    data-aos-delay="500"
+                >
+
+                    <div class="step-marker">
+                        تحریکِ پاکستان
+                    </div>
+
+                    <div class="step-content">
+
+                        <span class="step-arrow">
+                            <i class="fas fa-arrow-down"></i>
+                        </span>
+
+                        <h4>
+                            سیاسی جدوجہد
+                        </h4>
+
+                    </div>
+
+                </div>
+
+
+                <div class="journey-connector"></div>
+
+
+
+                <!-- STEP 7 -->
+
+                <div
+                    class="journey-step step-7 final"
+                    data-aos="fade-in"
+                    data-aos-delay="600"
+                >
+
+                    <div class="step-marker">
+                        🇵🇰
+                    </div>
+
+                    <div class="step-content final">
+
+                        <h4>
+                            14 اگست 1947
+                        </h4>
+
+                        <p>
+                            پاکستان کا قیام
+                        </p>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+
+    <!-- ================= SUMMARY ================= -->
+
+    <section
+        class="section section-summary"
+        id="summary"
+    >
+
+        <div class="container">
+
+
+            <div class="section-header">
+
+                <h2 class="section-title">
+                    خلاصہ
+                </h2>
+
+
+                <div class="section-divider">
+
+                    <span class="divider-line"></span>
+
+                    <span class="divider-icon">
+                        <i class="fas fa-bookmark"></i>
+                    </span>
+
+                    <span class="divider-line"></span>
+
+                </div>
+
+            </div>
+
+
+
+            <div class="summary-content">
+
+
+                <div
+                    class="summary-text"
+                    data-aos="fade-up"
+                >
+
+                    <p>
+                        قیامِ پاکستان ایک طویل جدوجہد کا نتیجہ تھا۔
+                        سر سید احمد خان کی تعلیمی تحریک، مسلم لیگ کا قیام، نظریۂ دو قوم، قراردادِ لاہور اور قائداعظم محمد علی جناح کی قیادت میں مسلسل جدوجہد نے پاکستان کے قیام کی راہ ہموار کی۔
+                    </p>
+
+
+                    <p>
+                        اپنے سیاسی حقوق کے تحفظ، ثقافتی شناخت کی حفاظت اور معاشی ترقی کے لیے مسلمانوں نے ایک الگ وطن کے قیام کا فیصلہ کیا۔
+                    </p>
+
+
+                    <p class="highlight">
+                        آخرکار 14 اگست 1947ء کو پاکستان وجود میں آیا اور مسلمانوں کو اپنا آزاد وطن مل گیا۔
+                    </p>
+
+                </div>
+
+
+
+                <div
+                    class="summary-visual"
+                    data-aos="zoom-in"
+                >
+
+                    <div class="summary-flag">
+
+                        <div class="flag-ring"></div>
+                        <div class="flag-ring"></div>
+                        <div class="flag-ring"></div>
+
+
+                        <div class="flag-center">
+
+                            <span class="flag-emoji">
+                                🇵🇰
+                            </span>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+
+    <!-- ================= CELEBRATION ================= -->
+
+    <section
+        class="section section-celebration"
+        id="celebration"
+    >
+
+        <div class="celebration-overlay"></div>
+
+
+        <div class="celebration-background">
+
+            <div
+                class="parallax-layer cel-layer-1"
+                data-speed="0.2"
+            ></div>
+
+            <div
+                class="parallax-layer cel-layer-2"
+                data-speed="0.4"
+            ></div>
+
+        </div>
+
+
+        <div class="container">
+
+            <div class="celebration-content">
+
+
+                <div
+                    class="celebration-flag"
+                    id="celebrationFlag"
+                >
+
+                    <div class="flag-pole large"></div>
+
+
+                    <div class="flag-cloth large">
+
+                        <div class="flag-green"></div>
+
+                        <div class="flag-white"></div>
+
+                        <div class="flag-star"></div>
+
+                        <div class="flag-crescent"></div>
+
+                    </div>
+
+                </div>
+
+
+
+                <div class="celebration-text">
+
+
+                    <div
+                        class="celebration-badge"
+                        data-aos="fade-down"
+                    >
+
+                        <span>
+                            🇵🇰
+                        </span>
+
+                    </div>
+
+
+                    <h2
+                        class="celebration-title"
+                        data-aos="fade-up"
+                    >
+                        پاکستان زندہ باد
+                    </h2>
+
+
+                    <p
+                        class="celebration-subtitle"
+                        data-aos="fade-up"
+                        data-aos-delay="100"
+                    >
+                        14 اگست 1947ء — ایک خواب حقیقت بن گیا
+                    </p>
+
+
+                    <div class="celebration-stars">
+
+                        <span class="star">
+                            <i class="fas fa-star"></i>
+                        </span>
+
+                        <span class="star">
+                            <i class="fas fa-star"></i>
+                        </span>
+
+                        <span class="star">
+                            <i class="fas fa-star"></i>
+                        </span>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+
+        <div
+            class="celebration-particles-final"
+            id="finalParticles"
+        ></div>
+
+    </section>
+
+
+
+    <!-- ================= FOOTER ================= -->
+
+    <footer class="footer">
+
+        <div class="container">
+
+
+            <div class="footer-content">
+
+
+                <div class="footer-logo">
+
+                    <span class="logo-icon">
+                        <i class="fas fa-mosque"></i>
+                    </span>
+
+                    <span class="logo-text">
+                        پاکستان
+                    </span>
+
+                </div>
+
+
+                <p class="footer-text">
+                    قیامِ پاکستان سے قبل کیا ہوا اور کیسے ہوا؟ — ایک تعلیمی جائزہ
+                </p>
+
+
+                <div class="footer-social">
+
+                    <a
+                        href="#"
+                        aria-label="Share"
+                    >
+                        <i class="fas fa-share-alt"></i>
+                    </a>
+
+
+                    <a
+                        href="#"
+                        aria-label="Heart"
+                    >
+                        <i class="fas fa-heart"></i>
+                    </a>
+
+
+                    <a
+                        href="#"
+                        aria-label="Star"
+                    >
+                        <i class="fas fa-star"></i>
+                    </a>
+
+                </div>
+
+            </div>
+
+
+            <div class="footer-bottom">
+
+                <p>
+                    &copy; 2026 | ٹیکنالوجی: HTML5, CSS3, JavaScript
+                </p>
+
+            </div>
+
+        </div>
+
+    </footer>
+
+
+
+    <!-- ================= BACK TO TOP ================= -->
+
+    <button
+        class="back-to-top"
+        id="backToTop"
+        aria-label="Back to Top"
+    >
+
+        <i class="fas fa-arrow-up"></i>
+
+    </button>
+
+
+
+    <!-- ================= JAVASCRIPT ================= -->
+
+    <script src="script.js"></script>
+    <script src="two-nation.js"></script>
+
+</body>
+</html>
